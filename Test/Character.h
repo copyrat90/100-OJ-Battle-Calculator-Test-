@@ -1,5 +1,5 @@
-// Ä³¸¯ÅÍ Å¬·¡½º ¼±¾ð
-// Ä³¸¯ÅÍ´Â ½ºÅÈ°ú ¹èÆ²°ú °ü·ÃµÈ ÇÔ¼öµéÀ» °®´Â Å¬·¡½º
+// ìºë¦­í„° í´ëž˜ìŠ¤ ì„ ì–¸
+// ìºë¦­í„°ëŠ” ìŠ¤íƒ¯ê³¼ ë°°í‹€ê³¼ ê´€ë ¨ëœ í•¨ìˆ˜ë“¤ì„ ê°–ëŠ” í´ëž˜ìŠ¤
 
 #ifndef CHARACTER_H
 #define CHARACTER_H
@@ -13,14 +13,14 @@ public:
 		if (m_HP <= 0)
 		{
 			m_HP = 1;
-			std::cout << "ÃÖ¼Ò HP 1·Î ÀçÁ¶Á¤µÊ" << std::endl;
+			std::cout << "ìµœì†Œ HP 1ë¡œ ìž¬ì¡°ì •ë¨" << std::endl;
 		}
 	}
 
-	int GetHP(void) { return m_HP; }
-	int GetATK(void) { return m_ATK; }
-	int GetDEF(void) { return m_DEF; }
-	int GetEVD(void) { return m_EVD; }
+	int GetHP(void) const { return m_HP; }
+	int GetATK(void) const { return m_ATK; }
+	int GetDEF(void) const { return m_DEF; }
+	int GetEVD(void) const { return m_EVD; }
 
 	int KillValueBeforeBattle(Character& defender);
 	double EstimateDamageDEF(int attackNum);
